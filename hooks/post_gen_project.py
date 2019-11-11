@@ -1,7 +1,8 @@
 import subprocess
 
-# Install Pipenv Dependencies
-subprocess.call(['poetry', 'install'])
+# Install Dependencies and make sure everything works.
+subprocess.call(['bash', './scripts/setup.sh'])
+subprocess.call(['bash', './scripts/test.sh'])
 
 # Create Git Repo and push
 subprocess.call(['git', 'init'])
