@@ -1,4 +1,5 @@
 #!/bin/bash
+pynev init
 pyenv shell
 poetry update
 poetry install
