@@ -1,4 +1,6 @@
-# Boilerplate Project
+# {{ cookiecutter.project_slug }}
+
+{{ cookiecutter.prject_description }}
 
 ## Setup
 To setup you need to have `pyenv` and `poetry` installed your machine and accessible in you

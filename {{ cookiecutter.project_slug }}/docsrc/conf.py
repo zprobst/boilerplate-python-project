@@ -1,10 +1,10 @@
 import msmb_theme
 
 # Project Information
-project = "Sphinx-Themes template"
-copyright = "2018, sphinx-themes.org"
-author = "sphinx-themes.org"
-version = ""
+project = "{{ cookiecutter.project_slug }}"
+copyright = "2019, {{ cookiecutter.team_lead_name }}"
+author = "{{ cookiecutter.team_lead_name }}"
+version = "1.0.0"
 release = "1"
 
 # Setup Extensions.

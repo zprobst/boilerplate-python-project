@@ -1,0 +1,7 @@
+{
+    "project_slug": "service-name",
+    "project_empty_repo": "git@github.com:your-username/your-project.git",
+    "prject_description": "A project setup with the python cookiecutter",
+    "team_lead_name": "Zach Probst",
+    "team_lead_email": "zprobst@resilientvitality.com"
+}
