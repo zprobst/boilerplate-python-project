@@ -1,8 +1,11 @@
 import subprocess
+import os
+
+shell = os.environ.get('SHELL')
 
 # Install Dependencies and make sure everything works.
-subprocess.call(['bash', './scripts/setup.sh'])
-subprocess.call(['bash', './scripts/test.sh'])
+subprocess.call([shell, './scripts/setup.sh'])
+subprocess.call([shell, './scripts/test.sh'])
 
 # Create Git Repo and push
 subprocess.call(['git', 'init'])
