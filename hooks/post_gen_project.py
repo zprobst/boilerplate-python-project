@@ -3,13 +3,18 @@ import os
 
 shell = os.environ.get('SHELL')
 
-# Install Dependencies and make sure everything works.
-subprocess.call([shell, './scripts/setup.sh'])
-subprocess.call([shell, './scripts/test.sh'])
+commands = [
+    'poetry update',
+    'poetry install',
+    'git init',
+    'poetry run pre-commit install',
+    'poetry run pytest --cov=src tests/',
+    'poetry run bandit -r src',
+    'git add .',
+    'git commit -n -m "Initial Commit"',
+    'git remote add origin {{ cookiecutter.project_empty_repo }}',
+    'git push -u origin master'
+]
 
-# Create Git Repo and push
-subprocess.call(['git', 'init'])
-subprocess.call(['git', 'add', '*'])
-subprocess.call(['git', 'commit', '-n', '-m', 'Initial commit'])
-subprocess.call(['git', 'remote', 'add', 'origin', '{{ cookiecutter.project_empty_repo}}'])
-subprocess.call(['git', 'push', '-u', 'origin', 'master'])
+for command in commands:
+    subprocess.call(command)
