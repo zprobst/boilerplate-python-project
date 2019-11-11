@@ -17,4 +17,4 @@ commands = [
 ]
 
 for command in commands:
-    subprocess.call(command)
+    subprocess.call(command, shell=True)
