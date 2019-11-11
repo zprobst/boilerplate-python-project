@@ -1,4 +1,4 @@
-from src.math import add
+from {{ cookiecutter.project_slug }}.math import add
 
 
 def test_add_simple():
