@@ -16,6 +16,9 @@ pytest-mock = "^1.11"
 black = {version = "^18.3-alpha.0", allows-prereleases = true}
 pre-commit = "^1.20"
 bandit = "^1.6"
+sphinx = "^2.2"
+msmb_theme = "^1.2"
+sphinx_rtd_theme = "^0.4.3"
 
 [tool.black]
 line-length = 79
