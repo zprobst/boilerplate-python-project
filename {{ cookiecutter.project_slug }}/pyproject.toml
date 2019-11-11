@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "default-py-project"
+name = "{{ cookiecutter.project_slug }}"
 version = "0.1.0"
 description = "A default python project with some setup for standards"
-authors = ["Zach Probst <zprobst@resilientvitality.com>"]
+authors = ["{{ cookiecutter.team_lead_name }} <{{ cookiecutter.team_lead_email }}>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
