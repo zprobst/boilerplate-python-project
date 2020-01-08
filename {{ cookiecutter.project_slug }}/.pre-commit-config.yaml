@@ -1,10 +1,5 @@
 repos:
   -
-    repo: 'https://github.com/pre-commit/pre-commit'
-    rev: v1.20.0
-    hooks:
-      - id: validate_manifest
-  -
     repo: 'https://github.com/pre-commit/pre-commit-hooks'
     rev: v2.4.0
     hooks:
@@ -14,12 +9,6 @@ repos:
       - id: check-json
       - id: check-yaml
       - id: debug-statements
-  -
-    repo: 'https://github.com/asottile/reorder_python_imports'
-    rev: v1.8.0
-    hooks:
-      - id: reorder-python-imports
-        language_version: python3
   -
     repo: "https://github.com/psf/black"
     rev: 19.10b0
@@ -31,8 +20,3 @@ repos:
     rev: 3.7.7
     hooks:
       - id: flake8
-  -
-    repo: git://github.com/smian/pre-commit-makefile
-    sha: master
-    hooks:
-      - id: makefile-doc
